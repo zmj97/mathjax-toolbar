@@ -123,7 +123,7 @@ return /******/ (function(modules) { // webpackBootstrap
   data() {
     return {
       // 颜色
-      colors: [['红色', 'red', '{\\color{Red} ', '}'], ['绿色', 'green', '{\\color{Green} ', '}'], ['蓝色', 'blue', '{\\color{Blue} ', '}'], ['黄色', 'yellow', '{\\color{Yellow} ', '}'], ['青色', 'cyan', '{\\color{Cyan} ', '}'], ['紫色', 'purple', '{\\color{Purple} ', '}'], ['橙色', 'orange', '{\\color{Orange} ', '}'], ['金色', 'gold', '{\\color{Gold} ', '}']],
+      colors: [['红色', 'red', '{\\color{Red}', '}'], ['绿色', 'green', '{\\color{Green}', '}'], ['蓝色', 'blue', '{\\color{Blue}', '}'], ['黄色', 'yellow', '{\\color{Yellow}', '}'], ['青色', 'cyan', '{\\color{Cyan}', '}'], ['紫色', 'purple', '{\\color{Purple}', '}'], ['橙色', 'orange', '{\\color{Orange}', '}'], ['金色', 'gold', '{\\color{Gold}', '}']],
 
       types: {
 
@@ -136,13 +136,13 @@ return /******/ (function(modules) { // webpackBootstrap
         // 希腊字母
         greekLetters: {
           name: '希腊字母',
-          data: [['α', '\\alpha ', ''], ['β', '\\beta ', ''], ['γ', '\\gamma ', ''], ['δ', '\\delta ', ''], ['ε', '\\epsilon ', ''], ['ζ', '\\zeta ', ''], ['η', '\\eta ', ''], ['θ', '\\theta ', ''], ['ι', '\\iota ', ''], ['κ', '\\kappa ', ''], ['λ', '\\lambda ', ''], ['μ', '\\mu ', ''], ['ν', '\\nu ', ''], ['ξ', '\\xi ', ''], ['ο', '\\omicron ', ''], ['π', '\\pi ', ''], ['ρ', '\\rho ', ''], ['σ', '\\sigma ', ''], ['τ', '\\tau ', ''], ['υ', '\\upsilon ', ''], ['φ', '\\phi ', ''], ['χ', '\\chi ', ''], ['ψ', '\\psi ', ''], ['ω', '\\omega ', ''], ['大写', '\\Alpha ', ''], ['斜体', '\\varalpha ', '']]
+          data: [['α', '\\alpha', ''], ['β', '\\beta', ''], ['γ', '\\gamma', ''], ['δ', '\\delta', ''], ['ε', '\\epsilon', ''], ['ζ', '\\zeta', ''], ['η', '\\eta', ''], ['θ', '\\theta', ''], ['ι', '\\iota', ''], ['κ', '\\kappa', ''], ['λ', '\\lambda', ''], ['μ', '\\mu', ''], ['ν', '\\nu', ''], ['ξ', '\\xi', ''], ['ο', '\\omicron', ''], ['π', '\\pi', ''], ['ρ', '\\rho', ''], ['σ', '\\sigma', ''], ['τ', '\\tau', ''], ['υ', '\\upsilon', ''], ['φ', '\\phi', ''], ['χ', '\\chi', ''], ['ψ', '\\psi', ''], ['ω', '\\omega', ''], ['大写', '\\Alpha', ''], ['斜体', '\\varalpha', '']]
         },
 
         // 特殊符号
         specialSigns: {
           name: '特殊符号',
-          data: [['∞', '\\infty', ''], ['∪', '\\cup ', ''], ['∩', '\\cap ', ''], ['⊂', '\\subset ', ''], ['⊆', '\\subseteq ', ''], ['⊃', '\\supset ', ''], ['∈', '\\in ', ''], ['∉', '\\notin ', ''], ['∅', '\\varnothing ', ''], ['∀', '\\forall ', ''], ['∃', '\\exists ', ''], ['¬', '\\lnot ', ''], ['∇', '\\nabla ', ''], ['∂', '\\partial ', ''], ['∵', '\\because ', ''], ['∴', '\\therefore  ', '']]
+          data: [['∞', '\\infty', ''], ['∪', '\\cup', ''], ['∩', '\\cap', ''], ['⊂', '\\subset', ''], ['⊆', '\\subseteq', ''], ['⊃', '\\supset', ''], ['∈', '\\in', ''], ['∉', '\\notin', ''], ['∅', '\\varnothing', ''], ['∀', '\\forall', ''], ['∃', '\\exists', ''], ['¬', '\\lnot', ''], ['∇', '\\nabla', ''], ['∂', '\\partial', ''], ['∵', '\\because', ''], ['∴', '\\therefore', '']]
         },
 
         // 字母符号
@@ -166,7 +166,7 @@ return /******/ (function(modules) { // webpackBootstrap
         // 关系运算符
         relationOps: {
           name: '关系运算符',
-          data: [['∣', '\\mid', ''], ['∤', '\\nmid ', ''], ['⋅', '\\cdot ', ''], ['≤', '\\leq ', ' '], ['≥', '\\geq ', ' '], ['≠', '\\neq ', ' '], ['≈', '\\approx ', ''], ['≡', '\\equiv ', ''], ['≺', '\\prec ', ''], ['⪯', '\\preceq ', ''], ['≪', '\\ll ', ''], ['≻', '\\succ ', ''], ['⪰', '\\succeq ', ''], ['≫', '\\gg ', ''], ['~', '\\sim ', ''], ['≃', '\\simeq ', ''], ['≍', '\\asymp ', ''], ['≅', '\\cong ', ''], ['≐', '\\doteq ', ''], ['∝', '\\propto ', ''], ['⊨', '\\models ', ''], ['∥', '\\parallel ', ''], ['⋈', '\\bowtie ', ''], ['⊥', '\\perp ', ''], ['∘', '\\circ ', ''], ['∗', '\\ast ', ' '], ['⨀', '\\bigodot ', ''], ['⨂', '\\bigotimes ', ''], ['⨁', '\\bigoplus ', '']]
+          data: [['∣', '\\mid', ''], ['∤', '\\nmid', ''], ['⋅', '\\cdot', ''], ['≤', '\\leq', ' '], ['≥', '\\geq', ' '], ['≠', '\\neq', ' '], ['≈', '\\approx', ''], ['≡', '\\equiv', ''], ['≺', '\\prec', ''], ['⪯', '\\preceq', ''], ['≪', '\\ll', ''], ['≻', '\\succ', ''], ['⪰', '\\succeq', ''], ['≫', '\\gg', ''], ['~', '\\sim', ''], ['≃', '\\simeq', ''], ['≍', '\\asymp', ''], ['≅', '\\cong', ''], ['≐', '\\doteq', ''], ['∝', '\\propto', ''], ['⊨', '\\models', ''], ['∥', '\\parallel', ''], ['⋈', '\\bowtie', ''], ['⊥', '\\perp', ''], ['∘', '\\circ', ''], ['∗', '\\ast', ' '], ['⨀', '\\bigodot', ''], ['⨂', '\\bigotimes', ''], ['⨁', '\\bigoplus', '']]
         },
 
         // 算数运算符
@@ -178,7 +178,7 @@ return /******/ (function(modules) { // webpackBootstrap
         // 括号
         brackets: {
           name: '括号',
-          data: [['()', '\\left ( ', ' \\right )'], ['[]', '\\left [ ', ' \\right ]'], ['{}', '\\left \\{ ', ' \\right \\}'], ['||', '\\left | ', ' \\right |'], ['∥∥', '\\left \\| ', ' \\right \\|'], ['⟨⟩', '\\left \\langle ', ' \\right \\rangle'], ['⌊⌋', '\\left \\lfloor ', ' \\right \\rfloor'], ['⌈⌉', '\\left \\lceil ', ' \\right \\rceil']]
+          data: [['()', '\\left (', ' \\right )'], ['[]', '\\left [', ' \\right ]'], ['{}', '\\left \\{', ' \\right \\}'], ['||', '\\left |', ' \\right |'], ['∥∥', '\\left \\|', ' \\right \\|'], ['⟨⟩', '\\left \\langle', ' \\right \\rangle'], ['⌊⌋', '\\left \\lfloor', ' \\right \\rfloor'], ['⌈⌉', '\\left \\lceil', ' \\right \\rceil']]
         }
 
       }
@@ -236,9 +236,10 @@ return /******/ (function(modules) { // webpackBootstrap
         this.contentNode.setSelectionRange(start + offset, start + offset);
       }, 0);
 
-      // 高度自适应
-      this.contentNode.style.height = 'auto';
-      this.contentNode.style.minHeight = this.contentNode.scrollHeight + 'px';
+      // 触发input事件，从而高度自适应
+      var event = document.createEvent('HTMLEvents');
+      event.initEvent('input', true, true);
+      this.contentNode.dispatchEvent(event);
     }
   }
 });
@@ -269,7 +270,7 @@ const VueMathjaxToolbar = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_mathjaxToolbar_vue__ = __webpack_require__(0);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3a8a850e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_mathjaxToolbar_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_39a5e6a2_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_mathjaxToolbar_vue__ = __webpack_require__(9);
 function injectStyle (ssrContext) {
   __webpack_require__(3)
 }
@@ -284,12 +285,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-3a8a850e"
+var __vue_scopeId__ = "data-v-39a5e6a2"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_mathjaxToolbar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3a8a850e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_mathjaxToolbar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_39a5e6a2_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_mathjaxToolbar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -310,7 +311,7 @@ var content = __webpack_require__(4);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(6)("d62c8b0e", content, true, {});
+var update = __webpack_require__(6)("c1734268", content, true, {});
 
 /***/ }),
 /* 4 */
@@ -321,7 +322,7 @@ exports = module.exports = __webpack_require__(5)(false);
 exports.push([module.i, "@import url(https://unpkg.com/purecss@0.6.1/build/pure-min.css);", ""]);
 
 // module
-exports.push([module.i, ".pure-menu-list>li[data-v-3a8a850e]{float:left}.pure-menu-children[data-v-3a8a850e]{position:relative;min-width:100%;max-height:200px;background-color:#333;text-align:center;overflow:auto;z-index:5000}.pure-menu-item[data-v-3a8a850e]{cursor:pointer}.pure-menu-children .pure-menu-item[data-v-3a8a850e]{color:#bbb;transition:background-color .15s linear,color .15s linear}.pure-menu-children .pure-menu-item[data-v-3a8a850e]:hover{color:#333}.red[data-v-3a8a850e]{color:red}.green[data-v-3a8a850e]{color:green}.blue[data-v-3a8a850e]{color:blue}.yellow[data-v-3a8a850e]{color:#ff0}.cyan[data-v-3a8a850e]{color:cyan}.purple[data-v-3a8a850e]{color:purple}.orange[data-v-3a8a850e]{color:orange}.gold[data-v-3a8a850e]{color:gold}", ""]);
+exports.push([module.i, ".pure-menu-list>li[data-v-39a5e6a2]{float:left}.pure-menu-children[data-v-39a5e6a2]{position:relative;min-width:100%;max-height:200px;background-color:#333;text-align:center;overflow:auto;z-index:5000}.pure-menu-item[data-v-39a5e6a2]{cursor:pointer}.pure-menu-children .pure-menu-item[data-v-39a5e6a2]{color:#bbb;transition:background-color .15s linear,color .15s linear}.pure-menu-children .pure-menu-item[data-v-39a5e6a2]:hover{color:#333}.red[data-v-39a5e6a2]{color:red}.green[data-v-39a5e6a2]{color:green}.blue[data-v-39a5e6a2]{color:blue}.yellow[data-v-39a5e6a2]{color:#ff0}.cyan[data-v-39a5e6a2]{color:cyan}.purple[data-v-39a5e6a2]{color:purple}.orange[data-v-39a5e6a2]{color:orange}.gold[data-v-39a5e6a2]{color:gold}", ""]);
 
 // exports
 

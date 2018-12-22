@@ -44,14 +44,14 @@ export default {
     return {
       // 颜色
       colors: [
-        ['红色', 'red', '{\\color{Red} ', '}'],
-        ['绿色', 'green', '{\\color{Green} ', '}'],
-        ['蓝色', 'blue', '{\\color{Blue} ', '}'],
-        ['黄色', 'yellow', '{\\color{Yellow} ', '}'],
-        ['青色', 'cyan', '{\\color{Cyan} ', '}'],
-        ['紫色', 'purple', '{\\color{Purple} ', '}'],
-        ['橙色', 'orange', '{\\color{Orange} ', '}'],
-        ['金色', 'gold', '{\\color{Gold} ', '}']
+        ['红色', 'red', '{\\color{Red}', '}'],
+        ['绿色', 'green', '{\\color{Green}', '}'],
+        ['蓝色', 'blue', '{\\color{Blue}', '}'],
+        ['黄色', 'yellow', '{\\color{Yellow}', '}'],
+        ['青色', 'cyan', '{\\color{Cyan}', '}'],
+        ['紫色', 'purple', '{\\color{Purple}', '}'],
+        ['橙色', 'orange', '{\\color{Orange}', '}'],
+        ['金色', 'gold', '{\\color{Gold}', '}']
       ],
 
       types: {
@@ -72,32 +72,32 @@ export default {
         greekLetters: {
           name: '希腊字母',
           data: [
-            ['α', '\\alpha ', ''],
-            ['β', '\\beta ', ''],
-            ['γ', '\\gamma ', ''],
-            ['δ', '\\delta ', ''],
-            ['ε', '\\epsilon ', ''],
-            ['ζ', '\\zeta ', ''],
-            ['η', '\\eta ', ''],
-            ['θ', '\\theta ', ''],
-            ['ι', '\\iota ', ''],
-            ['κ', '\\kappa ', ''],
-            ['λ', '\\lambda ', ''],
-            ['μ', '\\mu ', ''],
-            ['ν', '\\nu ', ''],
-            ['ξ', '\\xi ', ''],
-            ['ο', '\\omicron ', ''],
-            ['π', '\\pi ', ''],
-            ['ρ', '\\rho ', ''],
-            ['σ', '\\sigma ', ''],
-            ['τ', '\\tau ', ''],
-            ['υ', '\\upsilon ', ''],
-            ['φ', '\\phi ', ''],
-            ['χ', '\\chi ', ''],
-            ['ψ', '\\psi ', ''],
-            ['ω', '\\omega ', ''],
-            ['大写', '\\Alpha ', ''],
-            ['斜体', '\\varalpha ', '']
+            ['α', '\\alpha', ''],
+            ['β', '\\beta', ''],
+            ['γ', '\\gamma', ''],
+            ['δ', '\\delta', ''],
+            ['ε', '\\epsilon', ''],
+            ['ζ', '\\zeta', ''],
+            ['η', '\\eta', ''],
+            ['θ', '\\theta', ''],
+            ['ι', '\\iota', ''],
+            ['κ', '\\kappa', ''],
+            ['λ', '\\lambda', ''],
+            ['μ', '\\mu', ''],
+            ['ν', '\\nu', ''],
+            ['ξ', '\\xi', ''],
+            ['ο', '\\omicron', ''],
+            ['π', '\\pi', ''],
+            ['ρ', '\\rho', ''],
+            ['σ', '\\sigma', ''],
+            ['τ', '\\tau', ''],
+            ['υ', '\\upsilon', ''],
+            ['φ', '\\phi', ''],
+            ['χ', '\\chi', ''],
+            ['ψ', '\\psi', ''],
+            ['ω', '\\omega', ''],
+            ['大写', '\\Alpha', ''],
+            ['斜体', '\\varalpha', '']
           ]
         },
 
@@ -106,21 +106,21 @@ export default {
           name: '特殊符号',
           data: [
             ['∞', '\\infty', ''],
-            ['∪', '\\cup ', ''],
-            ['∩', '\\cap ', ''],
-            ['⊂', '\\subset ', ''],
-            ['⊆', '\\subseteq ', ''],
-            ['⊃', '\\supset ', ''],
-            ['∈', '\\in ', ''],
-            ['∉', '\\notin ', ''],
-            ['∅', '\\varnothing ', ''],
-            ['∀', '\\forall ', ''],
-            ['∃', '\\exists ', ''],
-            ['¬', '\\lnot ', ''],
-            ['∇', '\\nabla ', ''],
-            ['∂', '\\partial ', ''],
-            ['∵', '\\because ', ''],
-            ['∴', '\\therefore  ', '']
+            ['∪', '\\cup', ''],
+            ['∩', '\\cap', ''],
+            ['⊂', '\\subset', ''],
+            ['⊆', '\\subseteq', ''],
+            ['⊃', '\\supset', ''],
+            ['∈', '\\in', ''],
+            ['∉', '\\notin', ''],
+            ['∅', '\\varnothing', ''],
+            ['∀', '\\forall', ''],
+            ['∃', '\\exists', ''],
+            ['¬', '\\lnot', ''],
+            ['∇', '\\nabla', ''],
+            ['∂', '\\partial', ''],
+            ['∵', '\\because', ''],
+            ['∴', '\\therefore', '']
           ]
         },
 
@@ -172,34 +172,34 @@ export default {
           name: '关系运算符',
           data: [
             ['∣', '\\mid', ''],
-            ['∤', '\\nmid ', ''],
-            ['⋅', '\\cdot ', ''],
-            ['≤', '\\leq ', ' '],
-            ['≥', '\\geq ', ' '],
-            ['≠', '\\neq ', ' '],
-            ['≈', '\\approx ', ''],
-            ['≡', '\\equiv ', ''],
-            ['≺', '\\prec ', ''],
-            ['⪯', '\\preceq ', ''],
-            ['≪', '\\ll ', ''],
-            ['≻', '\\succ ', ''],
-            ['⪰', '\\succeq ', ''],
-            ['≫', '\\gg ', ''],
-            ['~', '\\sim ', ''],
-            ['≃', '\\simeq ', ''],
-            ['≍', '\\asymp ', ''],
-            ['≅', '\\cong ', ''],
-            ['≐', '\\doteq ', ''],
-            ['∝', '\\propto ', ''],
-            ['⊨', '\\models ', ''],
-            ['∥', '\\parallel ', ''],
-            ['⋈', '\\bowtie ', ''],
-            ['⊥', '\\perp ', ''],
-            ['∘', '\\circ ', ''],
-            ['∗', '\\ast ', ' '],
-            ['⨀', '\\bigodot ', ''],
-            ['⨂', '\\bigotimes ', ''],
-            ['⨁', '\\bigoplus ', '']
+            ['∤', '\\nmid', ''],
+            ['⋅', '\\cdot', ''],
+            ['≤', '\\leq', ' '],
+            ['≥', '\\geq', ' '],
+            ['≠', '\\neq', ' '],
+            ['≈', '\\approx', ''],
+            ['≡', '\\equiv', ''],
+            ['≺', '\\prec', ''],
+            ['⪯', '\\preceq', ''],
+            ['≪', '\\ll', ''],
+            ['≻', '\\succ', ''],
+            ['⪰', '\\succeq', ''],
+            ['≫', '\\gg', ''],
+            ['~', '\\sim', ''],
+            ['≃', '\\simeq', ''],
+            ['≍', '\\asymp', ''],
+            ['≅', '\\cong', ''],
+            ['≐', '\\doteq', ''],
+            ['∝', '\\propto', ''],
+            ['⊨', '\\models', ''],
+            ['∥', '\\parallel', ''],
+            ['⋈', '\\bowtie', ''],
+            ['⊥', '\\perp', ''],
+            ['∘', '\\circ', ''],
+            ['∗', '\\ast', ' '],
+            ['⨀', '\\bigodot', ''],
+            ['⨂', '\\bigotimes', ''],
+            ['⨁', '\\bigoplus', '']
           ]
         },
 
@@ -241,14 +241,14 @@ export default {
         brackets: {
           name: '括号',
           data: [
-            ['()', '\\left ( ', ' \\right )'],
-            ['[]', '\\left [ ', ' \\right ]'],
-            ['{}', '\\left \\{ ', ' \\right \\}'],
-            ['||', '\\left | ', ' \\right |'],
-            ['∥∥', '\\left \\| ', ' \\right \\|'],
-            ['⟨⟩', '\\left \\langle ', ' \\right \\rangle'],
-            ['⌊⌋', '\\left \\lfloor ', ' \\right \\rfloor'],
-            ['⌈⌉', '\\left \\lceil ', ' \\right \\rceil']
+            ['()', '\\left (', ' \\right )'],
+            ['[]', '\\left [', ' \\right ]'],
+            ['{}', '\\left \\{', ' \\right \\}'],
+            ['||', '\\left |', ' \\right |'],
+            ['∥∥', '\\left \\|', ' \\right \\|'],
+            ['⟨⟩', '\\left \\langle', ' \\right \\rangle'],
+            ['⌊⌋', '\\left \\lfloor', ' \\right \\rfloor'],
+            ['⌈⌉', '\\left \\lceil', ' \\right \\rceil']
           ]
         }
 
@@ -307,9 +307,10 @@ export default {
         this.contentNode.setSelectionRange(start + offset, start + offset)
       }, 0)
 
-      // 高度自适应
-      this.contentNode.style.height = 'auto'
-      this.contentNode.style.minHeight = this.contentNode.scrollHeight + 'px'
+      // 触发input事件，从而高度自适应
+      var event = document.createEvent('HTMLEvents')
+      event.initEvent('input', true, true)
+      this.contentNode.dispatchEvent(event)
     }
   }
 }
