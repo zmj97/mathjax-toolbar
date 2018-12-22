@@ -1,7 +1,7 @@
 {
   "name": "mathjax-toolbar",
   "description": "A Vue.js Toolbar to Insert Mathjax Code.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "zmj97 <295692590@qq.com>",
   "license": "MIT",
   "main": "dist/mathjaxEditor.js",
