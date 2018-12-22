@@ -309,7 +309,7 @@ export default {
 
       // 高度自适应
       this.contentNode.style.height = 'auto'
-      this.contentNode.style.height = this.contentNode.scrollHeight + 'px'
+      this.contentNode.style.minHeight = this.contentNode.scrollHeight + 'px'
     }
   }
 }
