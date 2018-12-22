@@ -55,7 +55,7 @@ export default {
       ],
 
       types: {
-        
+
         // 上下标
         subSuperScripts: {
           name: '上下标',
@@ -97,7 +97,7 @@ export default {
             ['ψ', '\\psi ', ''],
             ['ω', '\\omega ', ''],
             ['大写', '\\Alpha ', ''],
-            ['斜体', '\\varalpha ', ''],
+            ['斜体', '\\varalpha ', '']
           ]
         },
 
@@ -120,7 +120,7 @@ export default {
             ['∇', '\\nabla ', ''],
             ['∂', '\\partial ', ''],
             ['∵', '\\because ', ''],
-            ['∴', '\\therefore  ', ''],
+            ['∴', '\\therefore  ', '']
           ]
         },
 
@@ -248,12 +248,27 @@ export default {
             ['∥∥', '\\left \\| ', ' \\right \\|'],
             ['⟨⟩', '\\left \\langle ', ' \\right \\rangle'],
             ['⌊⌋', '\\left \\lfloor ', ' \\right \\rfloor'],
-            ['⌈⌉', '\\left \\lceil ', ' \\right \\rceil'],
+            ['⌈⌉', '\\left \\lceil ', ' \\right \\rceil']
           ]
         }
 
       }
 
+    }
+  },
+
+  computed: {
+    // 返回输入框结点
+    contentNode () {
+      var rootNode = document.getElementById(this.contentId)
+      // 当id对应的节点为textarea或input时在此结点中插入公式
+      // 否则寻找子节点中的textarea
+      if (rootNode.nodeName === 'TEXTAREA' || rootNode.nodeName === 'INPUT') return rootNode
+      if (rootNode.querySelector('textarea') === null) {
+        return rootNode.querySelector('input')
+      } else {
+        return rootNode.querySelector('textarea')
+      }
     }
   },
 
@@ -266,33 +281,35 @@ export default {
     insert (valueLeft, valueRight) {
       var offset = valueLeft.length
 
-      var contentNode = document.querySelector('#' + this.contentId + ', #' + this.contentId + ' textarea, #' + this.contentId + ' input')
-
-      var oldValue = contentNode.value
+      var oldValue = this.contentNode.value
       // 如果textarea内有光标
-      if (typeof(contentNode.selectionStart) === 'number') {
-        var start = contentNode.selectionStart
-        if (contentNode.selectionEnd === start) {
+      if (typeof this.contentNode.selectionStart === 'number') {
+        var start = this.contentNode.selectionStart
+        if (this.contentNode.selectionEnd === start) {
           // 如果没有选中一段区域
           // 插入value
-          contentNode.value = oldValue.slice(0, start) + valueLeft + valueRight + oldValue.slice(start)
+          this.contentNode.value = oldValue.slice(0, start) + valueLeft + valueRight + oldValue.slice(start)
         } else {
           // 如果选中一段区域
           // 在选中区域右边插入valueRight，左边插入valueLeft
-          var end = contentNode.selectionEnd
-          contentNode.value = oldValue.slice(0,start) + valueLeft + oldValue.slice(start, end) + valueRight + oldValue.slice(end)
+          var end = this.contentNode.selectionEnd
+          this.contentNode.value = oldValue.slice(0, start) + valueLeft + oldValue.slice(start, end) + valueRight + oldValue.slice(end)
         }
       } else {
         // 如果textarea内没有光标
         // 添加到内容的尾部
-        contentNode.value = oldValue + valueLeft + valueRight
+        this.contentNode.value = oldValue + valueLeft + valueRight
         start = oldValue.length
       }
-      contentNode.focus()
-      setTimeout(function () {
+      this.contentNode.focus()
+      setTimeout(() => {
         // 否则移动无效
-        contentNode.setSelectionRange(start + offset, start + offset)
-      }, 0)  
+        this.contentNode.setSelectionRange(start + offset, start + offset)
+      }, 0)
+
+      // 高度自适应
+      this.contentNode.style.height = 'auto'
+      this.contentNode.style.height = this.contentNode.scrollHeight + 'px'
     }
   }
 }
@@ -304,11 +321,14 @@ export default {
 .pure-menu-list>li{float: left;}
 
 .pure-menu-children {
+  position: relative;
   min-width: 100%;
   max-height: 200px;
   background-color: #333;
   text-align: center;
   overflow: auto;
+  /* 防止被遮盖 */
+  z-index: 5000;
 }
 
 .pure-menu-item {cursor: pointer;}
