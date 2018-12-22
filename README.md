@@ -2,6 +2,9 @@
 
 > A Vue.js Toolbar Plugin to Insert Mathjax Code.
 
+## github
+[https://github.com/zmj97/mathjax-toolbar](https://github.com/zmj97/mathjax-toolbar)
+
 ## How to Use
 
 ``` bash
